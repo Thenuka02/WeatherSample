@@ -1,0 +1,26 @@
+form {
+    margin-top: 3rem;
+  }
+  
+  form input[name="city"],
+  .form input[name="country"] {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 0;
+  }
+
+  .button {
+    background-color:#64625f;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 25vh;
+  }
