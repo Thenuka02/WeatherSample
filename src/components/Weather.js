@@ -10,8 +10,11 @@ const Weather = () => {
 
     useEffect(() => {
         const fetchTemperature = async () => {
-            const response = await fetch ('http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=10a4cf0e684290e1cd09233af942dbcf'),
+            const url = 'http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=10a4cf0e684290e1cd09233af942dbcf',
+            const response = await fetch(url);
             const responseData = await response.json();
+
+            setTemperature(responseData);
         };
         fetchTemperature();
     }
