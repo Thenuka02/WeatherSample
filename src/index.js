@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {Provider} from "react-redux";
+import weatherstore from "./store/weatherstore";
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider weatherstore={weatherstore}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

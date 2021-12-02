@@ -20,6 +20,8 @@ const Weather = () => {
     }
 
     );
+
+    
   
     // const getWeatherData = (city, country) => {
     //   axios({
